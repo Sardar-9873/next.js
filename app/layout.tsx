@@ -2,16 +2,24 @@ export interface ILayoutProps {
   children: React.ReactNode
 }
 
+import { Inter, Roboto } from "next/font/google";
+import type { Metadata } from "next";
+
+const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({subsets:["latin"], weight:["400", "700"]});
+
+export const metadata : Metadata = {
+  title: "NEXT.js",
+  description: "NEXT.js learning and practicing."
+};
+
 function Layout({ children }: ILayoutProps) {
 
   return (
     <html>
-      <head>
-        <title>NEXT.js</title>
-      </head>
-      <body>
+       <body className={inter.className}>
         <div>
-          <p>NEXT.js with Sahal</p>
+          <p className={roboto.className}>NEXT.js with Sahal</p>
           <div>{children}</div>
         </div>
       </body>
