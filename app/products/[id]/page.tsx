@@ -85,8 +85,8 @@ export default async function ProductsPage({ params }: IIdProps) {
 
             
                 <div>
-                    <h2>{data.title}</h2>
-                    <p>${data.price}</p>
+                    {/* <h2>{data.title}</h2> */}
+                    {/* <p>${data.price}</p> */}
                 </div>
        
         </main>

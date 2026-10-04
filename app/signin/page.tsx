@@ -8,8 +8,8 @@ async function fetchData() {
 
 async function Page() {
 
-  const data = await fetchData();
-  console.log(data, "===>>>Data from signin page.<<<===");
+  // const data = await fetchData();
+  // console.log(data, "===>>>Data from signin page.<<<===");
 
   return (
     <>

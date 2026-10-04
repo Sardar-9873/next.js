@@ -9,8 +9,8 @@ async function fetchData() {
 
 
 async function Home() {
-  const data = await fetchData();
-  console.log(data);
+  // const data = await fetchData();
+  // console.log(data);
   return (
     <h1>Home Page</h1>
   );
